@@ -6,10 +6,11 @@
     <title>Support & Legal | TalkTrack</title>
     <style>
         :root {
-            --primary-color: #007AFF; /* Apple Blue */
+            --primary-color: #007AFF;
             --text-color: #1d1d1f;
             --bg-color: #f5f5f7;
             --card-bg: #ffffff;
+            --border-color: #d2d2d7;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -20,7 +21,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
@@ -28,14 +29,18 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
         nav {
+            position: sticky;
+            top: 0;
+            background: var(--card-bg);
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #d2d2d7;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            z-index: 100;
         }
-        nav a { margin-right: 15px; font-weight: 600; }
-        h1 { border-bottom: 2px solid var(--bg-color); padding-bottom: 10px; color: var(--primary-color); }
-        h2 { margin-top: 40px; color: var(--primary-color); font-size: 1.4rem; border-bottom: 1px solid var(--bg-color); padding-bottom: 5px; }
-        h3 { margin-top: 25px; font-size: 1.1rem; }
+        nav a { margin-right: 20px; font-weight: 600; text-decoration: none; color: var(--primary-color); }
+        h1 { padding-bottom: 10px; color: var(--primary-color); font-size: 2rem; }
+        h2 { margin-top: 40px; color: var(--primary-color); font-size: 1.5rem; border-bottom: 2px solid var(--bg-color); padding-bottom: 5px; }
+        h3 { margin-top: 30px; font-size: 1.15rem; color: #1d1d1f; }
         .contact-box {
             background: #eef7ff;
             padding: 20px;
@@ -44,10 +49,10 @@
             margin: 20px 0;
         }
         .legal-footer {
-            margin-top: 50px;
+            margin-top: 60px;
             font-size: 0.85rem;
             color: #86868b;
-            border-top: 1px solid #d2d2d7;
+            border-top: 1px solid var(--border-color);
             padding-top: 20px;
         }
         table {
@@ -56,12 +61,14 @@
             margin: 20px 0;
             font-size: 0.9rem;
         }
-        th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eee; }
-        th { background: #f9f9fb; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
+        th { background: #f9f9fb; font-weight: 600; }
         a { color: var(--primary-color); text-decoration: none; }
         a:hover { text-decoration: underline; }
-        ul { padding-left: 20px; }
-        .last-updated { font-style: italic; color: #86868b; }
+        ul { padding-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        .last-updated { font-style: italic; color: #86868b; margin-bottom: 20px; display: block; }
+        hr { border: 0; border-top: 1px solid var(--border-color); margin: 60px 0; }
     </style>
 </head>
 <body>
@@ -69,7 +76,7 @@
 <div class="container">
     <nav>
         <a href="#support">Support</a>
-        <a href="#terms">Terms</a>
+        <a href="#terms">Terms of Use</a>
         <a href="#privacy">Privacy Policy</a>
     </nav>
 
@@ -79,8 +86,7 @@
 
         <div class="contact-box">
             <strong>Need direct help?</strong><br>
-            General Support: <a href="mailto:claasmueller2@icloud.com">claasmueller2@icloud.com</a><br>
-            Account & Technical: <a href="mailto:camilabs.au+Talktrack@gmail.com">camilabs.au+Talktrack@gmail.com</a><br>
+            Email us at: <a href="mailto:camilabs.au+Talktrack@gmail.com">camilabs.au+Talktrack@gmail.com</a><br>
             <em>We typically respond within 24-48 hours.</em>
         </div>
 
@@ -92,49 +98,163 @@
         </ul>
     </section>
 
-    <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+    <hr>
 
     <section id="terms">
-        <h2>Terms of Service</h2>
-        <p>By using TalkTrack, you agree to the Apple Standard Licensed Application End User License Agreement (EULA). Specifically:</p>
+        <h1>TalkTrack — Terms of Use</h1>
+        <span class="last-updated">Last updated: March 2026</span>
+
+        <h3>1. ACCEPTANCE OF TERMS</h3>
+        <p>By downloading, installing, or using TalkTrack ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, do not use the App. These Terms apply to all versions of the App across all regions where it is available.</p>
+
+        <h3>2. DESCRIPTION OF SERVICE</h3>
+        <p>TalkTrack is a personal expense tracking application that allows you to record expenses by voice or manual entry, set budgets, track recurring expenses, and optionally sync your data to a personal cloud storage account. The App is intended for personal financial organisation only and does not constitute financial advice.</p>
+
+        <h3>3. FREE TRIAL AND SUBSCRIPTIONS</h3>
         <ul>
-            <li><strong>Auto-Renewal:</strong> Subscriptions renew automatically unless canceled at least 24 hours before the end of the period.</li>
-            <li><strong>Australian Consumer Law:</strong> Our services come with guarantees that cannot be excluded under the Australian Consumer Law.</li>
-            <li><strong>Right of Withdrawal (EU/Germany):</strong> By accessing digital content immediately, you acknowledge that you lose your 14-day right of withdrawal.</li>
+            <li>The App offers a 3-day free trial upon first installation, during which all features are available at no cost.</li>
+            <li>After the trial period, continued access to Pro features requires an active TalkTrack Pro subscription.</li>
+            <li>Subscriptions are offered on a monthly or yearly basis, or as a one-time lifetime purchase.</li>
+            <li>All payments are processed by Apple Inc. through the App Store. We do not collect or store your payment information.</li>
+            <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel your subscription at any time in your iPhone's App Store subscription settings (Settings → [your name] → Subscriptions).</li>
+            <li>No refunds are issued for partial subscription periods, except where required by applicable law or at Apple's sole discretion. To request a refund, contact Apple directly at reportaproblem.apple.com.</li>
         </ul>
+
+        <h3>4. USER ACCOUNTS</h3>
+        <ul>
+            <li>You may optionally create an account to enable cloud sync features. Account creation requires an email address, which is used solely for authentication.</li>
+            <li>You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account.</li>
+            <li>You may delete your account at any time from within the App under Settings → Account → Delete Account. Account deletion permanently removes your authentication credentials and any data we hold. Data stored locally on your device or in your personal iCloud account is not affected by account deletion and must be removed separately.</li>
+        </ul>
+
+        <h3>5. DATA STORAGE AND PRIVACY</h3>
+        <p>TalkTrack is a local-first application. Your expense data is stored on your device and is not transmitted to or stored on TalkTrack's servers. Specifically:</p>
+        <ul>
+            <li><strong>Local storage:</strong> All expense, budget, and category data is stored in a local database on your device.</li>
+            <li><strong>iCloud Sync (optional):</strong> If you enable iCloud Sync, your data is synced across your own Apple devices via your personal iCloud account, under Apple's privacy terms.</li>
+            <li><strong>Cloudflare Sync (optional):</strong> If you configure a personal Cloudflare Worker, your data is pushed to a database you own and control. TalkTrack does not have access to that database.</li>
+            <li><strong>Voice transcripts:</strong> When you record an expense by voice, the audio is transcribed on-device by Apple's Speech Recognition framework. The resulting text transcript is then sent to our AI processing service (via a Cloudflare Worker proxy) solely to categorise your expense. Transcripts are not stored beyond the duration of the API call.</li>
+            <li><strong>Authentication data:</strong> Your email address and a user ID are held by Supabase (our authentication provider) solely to manage your account session.</li>
+        </ul>
+        <p>For full details, see our Privacy Policy below.</p>
+
+        <h3>6. THIRD-PARTY SERVICES</h3>
+        <p>The App integrates the following third-party services, each governed by their own terms and privacy policies:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Supabase</td><td>Account authentication</td></tr>
+                <tr><td>RevenueCat</td><td>Subscription and purchase management</td></tr>
+                <tr><td>OpenRouter (via Cloudflare proxy)</td><td>AI-powered expense categorisation from voice transcripts</td></tr>
+                <tr><td>Cloudflare</td><td>Optional personal data sync infrastructure</td></tr>
+                <tr><td>Apple Speech Recognition</td><td>On-device voice-to-text transcription</td></tr>
+                <tr><td>Apple iCloud</td><td>Optional cross-device data sync</td></tr>
+            </tbody>
+        </table>
+
+        <h3>7. AI CATEGORISATION DISCLAIMER</h3>
+        <p>TalkTrack uses AI to automatically categorise expenses from voice input. This categorisation is a convenience feature and may not always be accurate. You are solely responsible for reviewing, confirming, and correcting all expense entries before relying on them for any financial purpose. TalkTrack is not liable for any decisions made based on AI-categorised data.</p>
+
+        <h3>8. ACCEPTABLE USE</h3>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Use the App for any unlawful purpose or in violation of any applicable laws or regulations</li>
+            <li>Attempt to gain unauthorised access to the App's backend systems or any third-party service used by the App</li>
+            <li>Reverse engineer, decompile, or disassemble any part of the App</li>
+            <li>Use the App to process data belonging to other individuals without their consent</li>
+            <li>Interfere with the integrity or performance of the App or its associated services</li>
+        </ul>
+
+        <h3>9. INTELLECTUAL PROPERTY</h3>
+        <p>All intellectual property rights in the App, including its design, code, and content, are owned by or licensed to TalkTrack. Nothing in these Terms grants you any right to use TalkTrack's name, logo, or trademarks. Your expense data belongs to you.</p>
+
+        <h3>10. DISCLAIMER OF WARRANTIES</h3>
+        <p>To the maximum extent permitted by applicable law, the App is provided "as is" and "as available" without warranties of any kind, express or implied. We do not warrant that the App will be error-free, uninterrupted, or free of security vulnerabilities.</p>
+        <p>Nothing in these Terms excludes, restricts, or modifies any consumer guarantee, right, or remedy that cannot be excluded under the Australian Consumer Law or any other applicable mandatory consumer protection legislation.</p>
+
+        <h3>11. LIMITATION OF LIABILITY</h3>
+        <p>To the maximum extent permitted by law, TalkTrack's total liability to you for any claim arising from your use of the App is limited to the amount you paid for the App or subscription in the 12 months preceding the claim. TalkTrack is not liable for any indirect, incidental, consequential, or special damages, including loss of data or financial loss, arising from your use of or inability to use the App.</p>
+
+        <h3>12. CHANGES TO THE APP AND TERMS</h3>
+        <p>We may update the App or these Terms at any time. We will notify you of material changes through the App or by email. Continued use of the App after changes are posted constitutes acceptance of the revised Terms. If you do not agree to the updated Terms, you should stop using the App and cancel any active subscription.</p>
+
+        <h3>13. AGE REQUIREMENT</h3>
+        <p>The App is not intended for use by individuals under the age of 13. By using the App, you confirm that you are at least 13 years old. If you are under 18, you confirm that you have obtained parental or guardian consent.</p>
+
+        <h3>14. GOVERNING LAW</h3>
+        <p>These Terms are governed by and construed in accordance with the laws of New South Wales, Australia. Any disputes arising under these Terms will be subject to the exclusive jurisdiction of the courts of New South Wales, Australia.</p>
+
+        <h3>15. CONTACT</h3>
+        <p>For questions about these Terms or to report an issue, contact us at: camilabs.au+Talktrack@gmail.com.</p>
     </section>
 
+    <hr>
+
     <section id="privacy">
-        <h2>Privacy Policy</h2>
-        <p class="last-updated">Last updated: March 2026</p>
+        <h1>TalkTrack — Privacy Policy</h1>
+        <span class="last-updated">Last updated: March 2026</span>
+
+        <h3>Who we are</h3>
+        <p>TalkTrack is a voice-powered personal expense tracker for iPhone. It is developed and operated as an independent app. If you have any questions about this policy, contact us at claasmueller2@icloud.com.</p>
+
+        <h3>What data TalkTrack collects and why</h3>
         
-        <p>TalkTrack is a voice-powered personal expense tracker for iPhone. It is developed and operated as an independent app.</p>
+        <p><strong>1. Expense data (financial information)</strong><br>
+        Your expenses, budgets, categories, and recurring entries are stored on your device using Apple's secure local database. This data never passes through our servers. You may optionally enable:</p>
+        <ul>
+            <li>iCloud Sync — stores your data in your own private Apple iCloud account, subject to Apple's privacy policy.</li>
+            <li>Cloudflare Worker Sync — if you choose to configure this advanced feature, data is sent to a Cloudflare Worker URL that you provide and control. We have no access to it.</li>
+        </ul>
 
-        <h3>What data we collect and why</h3>
-        <p><strong>1. Expense data:</strong> Stored on your device using Apple's secure local database. Optional iCloud Sync or Cloudflare Worker Sync (user-controlled) can be enabled.</p>
-        <p><strong>2. Voice data:</strong> On-device recognition converts speech to text. Raw audio is never stored. Text transcripts are sent to the OpenRouter API for categorization but are not stored by us beyond that call.</p>
-        <p><strong>3. Account info:</strong> Email and User IDs are stored via <strong>Supabase</strong> to secure your account. Not shared with advertisers.</p>
-        <p><strong>4. Purchase info:</strong> Managed by <strong>RevenueCat</strong>. We do not handle payment details directly.</p>
+        <p><strong>2. Voice and microphone data</strong><br>
+        When you record an expense by voice, your iPhone's on-device speech recognition converts your speech into text. The raw audio is never stored or transmitted anywhere. The resulting text transcript is sent to an AI language model (via the OpenRouter API) solely to identify the expense amount, category, and description. The transcript is not stored by us beyond that single API call.</p>
 
-        <h3>Third-party services</h3>
+        <p><strong>3. Account information (email address and user ID)</strong><br>
+        If you create an account, your email address and a unique user ID are stored with our authentication provider (Supabase). This is used only to secure your account and is never shared with advertisers or analytics providers.</p>
+
+        <p><strong>4. Purchase and subscription information</strong><br>
+        Subscription status is managed by RevenueCat. TalkTrack never directly handles payment information. Please refer to RevenueCat's privacy policy for details on how subscription data is processed.</p>
+
+        <h3>What TalkTrack does NOT do</h3>
+        <ul>
+            <li>We do not sell your data to anyone.</li>
+            <li>We do not use your data for advertising.</li>
+            <li>We do not share your expense data with third parties (except the AI categorization call described above, which is stateless and not stored).</li>
+            <li>We do not track you across other apps or websites.</li>
+            <li>We do not collect analytics or crash reports beyond what Apple provides to all App Store developers via App Store Connect.</li>
+        </ul>
+
+        <h3>Third-party services used</h3>
         <table>
             <thead>
                 <tr>
                     <th>Service</th>
                     <th>Purpose</th>
-                    <th>Policy</th>
+                    <th>Their Privacy Policy</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Apple Speech</td><td>On-device voice-to-text</td><td><a href="https://www.apple.com/privacy/">Link</a></td></tr>
-                <tr><td>OpenRouter</td><td>AI Categorization</td><td><a href="https://openrouter.ai/privacy">Link</a></td></tr>
-                <tr><td>Supabase</td><td>Authentication</td><td><a href="https://supabase.com/privacy">Link</a></td></tr>
-                <tr><td>RevenueCat</td><td>Subscription Management</td><td><a href="https://www.revenuecat.com/privacy">Link</a></td></tr>
+                <tr><td>Apple Speech Recognition</td><td>On-device voice-to-text</td><td><a href="https://www.apple.com/privacy/">https://www.apple.com/privacy/</a></td></tr>
+                <tr><td>OpenRouter / Claude AI</td><td>Expense categorization from voice transcript</td><td><a href="https://openrouter.ai/privacy">https://openrouter.ai/privacy</a></td></tr>
+                <tr><td>Supabase</td><td>Account authentication</td><td><a href="https://supabase.com/privacy">https://supabase.com/privacy</a></td></tr>
+                <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></td></tr>
+                <tr><td>Apple iCloud / CloudKit</td><td>Optional cross-device sync</td><td><a href="https://www.apple.com/privacy/">https://www.apple.com/privacy/</a></td></tr>
             </tbody>
         </table>
 
-        <h3>Data Retention & Deletion</h3>
-        <p>Local data is removed by deleting the app. To delete your authentication account data, contact <strong>camilabs.au+Talktrack@gmail.com</strong>. We process requests within 30 days.</p>
+        <h3>Data retention and deletion</h3>
+        <p>Your local expense data is yours — you can delete the app at any time to remove it from your device. To delete your account and any associated authentication data, contact us at camilabs.au+Talktrack@gmail.com and we will process your request within 30 days.</p>
+
+        <h3>Children's privacy</h3>
+        <p>TalkTrack is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+
+        <h3>Changes to this policy</h3>
+        <p>If we make material changes to this policy, we will update the "Last updated" date at the top. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
     </section>
 
     <div class="legal-footer">
