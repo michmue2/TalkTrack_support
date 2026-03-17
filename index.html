@@ -43,4 +43,111 @@
             border-radius: 4px;
             margin: 20px 0;
         }
-        .legal
+        .legal-footer {
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: #86868b;
+            border-top: 1px solid #d2d2d7;
+            padding-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+        th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eee; }
+        th { background: #f9f9fb; }
+        a { color: var(--primary-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { padding-left: 20px; }
+        .last-updated { font-style: italic; color: #86868b; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="#support">Support</a>
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy Policy</a>
+    </nav>
+
+    <section id="support">
+        <h1>TalkTrack Support</h1>
+        <p>We are here to help you manage your expenses with ease using voice-powered AI. If you have any questions or issues, please see the resources below.</p>
+
+        <div class="contact-box">
+            <strong>Need direct help?</strong><br>
+            General Support: <a href="mailto:claasmueller2@icloud.com">claasmueller2@icloud.com</a><br>
+            Account & Technical: <a href="mailto:camilabs.au+Talktrack@gmail.com">camilabs.au+Talktrack@gmail.com</a><br>
+            <em>We typically respond within 24-48 hours.</em>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>How do I track an expense?</strong> Simply tap the microphone button and speak your transaction (e.g., "15 dollars for lunch at the cafe").</li>
+            <li><strong>Managing Subscriptions:</strong> Subscriptions are managed through your Apple ID. Go to Settings > [Your Name] > Subscriptions on your iPhone to cancel or change plans.</li>
+            <li><strong>Data Privacy:</strong> Your voice data is processed securely and your expenses are stored privately in your personal account.</li>
+        </ul>
+    </section>
+
+    <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+    <section id="terms">
+        <h2>Terms of Service</h2>
+        <p>By using TalkTrack, you agree to the Apple Standard Licensed Application End User License Agreement (EULA). Specifically:</p>
+        <ul>
+            <li><strong>Auto-Renewal:</strong> Subscriptions renew automatically unless canceled at least 24 hours before the end of the period.</li>
+            <li><strong>Australian Consumer Law:</strong> Our services come with guarantees that cannot be excluded under the Australian Consumer Law.</li>
+            <li><strong>Right of Withdrawal (EU/Germany):</strong> By accessing digital content immediately, you acknowledge that you lose your 14-day right of withdrawal.</li>
+        </ul>
+    </section>
+
+    <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p class="last-updated">Last updated: March 2026</p>
+        
+        <p>TalkTrack is a voice-powered personal expense tracker for iPhone. It is developed and operated as an independent app.</p>
+
+        <h3>What data we collect and why</h3>
+        <p><strong>1. Expense data:</strong> Stored on your device using Apple's secure local database. Optional iCloud Sync or Cloudflare Worker Sync (user-controlled) can be enabled.</p>
+        <p><strong>2. Voice data:</strong> On-device recognition converts speech to text. Raw audio is never stored. Text transcripts are sent to the OpenRouter API for categorization but are not stored by us beyond that call.</p>
+        <p><strong>3. Account info:</strong> Email and User IDs are stored via <strong>Supabase</strong> to secure your account. Not shared with advertisers.</p>
+        <p><strong>4. Purchase info:</strong> Managed by <strong>RevenueCat</strong>. We do not handle payment details directly.</p>
+
+        <h3>Third-party services</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Policy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Apple Speech</td><td>On-device voice-to-text</td><td><a href="https://www.apple.com/privacy/">Link</a></td></tr>
+                <tr><td>OpenRouter</td><td>AI Categorization</td><td><a href="https://openrouter.ai/privacy">Link</a></td></tr>
+                <tr><td>Supabase</td><td>Authentication</td><td><a href="https://supabase.com/privacy">Link</a></td></tr>
+                <tr><td>RevenueCat</td><td>Subscription Management</td><td><a href="https://www.revenuecat.com/privacy">Link</a></td></tr>
+            </tbody>
+        </table>
+
+        <h3>Data Retention & Deletion</h3>
+        <p>Local data is removed by deleting the app. To delete your authentication account data, contact <strong>camilabs.au+Talktrack@gmail.com</strong>. We process requests within 30 days.</p>
+    </section>
+
+    <div class="legal-footer">
+        <h3>Impressum (Legal Notice)</h3>
+        <p>
+            <strong>Operator:</strong> Camilla Sadyrova<br>
+            <strong>Address:</strong> 50 Garden St, Alexandria NSW 2015, Australia<br>
+            <strong>Contact:</strong> camilabs.au+Talktrack@gmail.com<br>
+            <strong>Responsible for Content:</strong> Camilla Sadyrova
+        </p>
+        <p>&copy; 2026 TalkTrack. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
